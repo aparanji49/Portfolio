@@ -31,6 +31,7 @@ h2 {
 
 p {
   margin: 0px;
+  padding: 5px;
   font-size: 20px;
 }
 
@@ -121,7 +122,7 @@ nav a{
 
 .main-text {
   padding: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .square {
@@ -372,10 +373,14 @@ footer {
 .edu-card, .work-card{
   margin-bottom: 10px;
   width: 300px;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.work-card{
+  margin-top: 50px;
 }
 
 .edu-card:hover, .work-card:hover {
@@ -386,11 +391,11 @@ img {
   max-width: 100%;
 }
 
-nav a {
+h2, nav a {
   position: relative;
 }
 
-nav a:hover, nav a:focus {
+h2:hover, h2:focus, nav a:hover, nav a:focus  {
   color: rgb(101, 89, 115); 
 
 }
@@ -417,4 +422,16 @@ nav a:hover::before, nav a:focus::before {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.info-card{
+  display: none;
+}
+
+.work-card:hover .info-card{
+  display: block;
+}
+
+.edu-card:hover .info-card{
+  display: block;
 }
